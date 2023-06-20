@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  color: #fff;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url("img/stacked-waves-haikei.svg");
+  background-size: cover;
+  background-repeat: repeat;
+  /* height:3000px; */
+}
+
+.navbar{
+  background-color:#E3CCAE;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  border-bottom: 1px solid #000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+.navbar .navbar-logo {
+font-size: 2rem;
+font-weight: 700;
+color: #fff;
+font-style: italic;
+}
+
+.navbar .navbar-logo span {
+color: #EA906C;
+}
+.navbar .navbar-nav a {
+color: #fff;
+display: inline-block;
+font-size: 1.2rem;
+margin: 0 1rem;
+}
+.navbar .navbar-nav a:hover {
+color: #EA906C;
+}
+.navbar .navbar-nav a::after {
+content: "";
+display: block;
+padding-bottom: 0.5rem;
+border-bottom: 0.1rem solid #EA906C;
+transform: scaleX(0);
+transition: 0.2s linear;
+}
+.navbar .navbar-nav a:hover::after {
+transform: scaleX(0.5);
+}
+.hero{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.hero .content {
+  padding: 2rem 5%;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 40px;
+}
+.hero .content .ket{
+  padding: 0 20px 10px 2rem ;
+  margin-top: 12rem;
+  
+}
+.hero .content .ket h1 {
+  font-size: 3.8em;
+  color: #fff;
+}
+
+.hero .content .ket h1 span {
+  color: #fa520f;
+}
+.hero .content .ket p {
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  padding-left: 8px;
+}
+.hero .content .foto{
+  border: 2px solid #fff;
+  border-radius: 20%;
+  padding: 10px;
+  margin-left: 11rem;
+  
+}
+.about {
+padding: 7.5rem 7% 1.4rem;
+}
+.about h2 {
+text-align: center;
+font-size: 2.4rem;
+margin-bottom: 3rem;
+}
+.about h2 span {
+color: #fa520f;
+}
+.about .row {
+display: flex;
+}
+.about .row .about-img {
+flex: 1 1 30rem;
+}
+.about .row .about-img img {
+width: 90%;
+}
+.about .row .content {
+flex: 1 1 35rem;
+padding: 0 1rem;
+}
+.about .row .content h3 {
+font-size: 1.8rem;
+margin-bottom: 0.8rem;
+}
+.about .row .content p {
+font-size: 1.4rem;
+margin-bottom: 0.8rem;
+font-weight: 200;
+line-height: 1.6;
+
+}
+.menu{
+margin-top: 100px;
+padding: 100px;
+}
+.menu h2{
+text-align: center;
+font-size: 2.4rem;
+margin-bottom: 1rem;
+color: #fff;
+padding: 4rem 7% 1.4rem;
+}
+  .menu h2 span{
+color: #fa520f;
+}
+.menu p{
+text-align: center;
+max-width: 30rem;
+margin: auto;
+font-size: 1.2rem;
+font-weight: 200;
+line-height: 1.6;
+}
+
+.menu .row {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+margin-top: 2rem;
+}
+.menu .row .menu-card {
+text-align: center;
+padding-bottom: 4rem;
+border:1px solid;
+border-radius:10px;
+padding: 20px 0;
+margin: 20px 10px;
+}
+.menu .row .menu-card img {
+width: 15rem;
+border-radius: 10%;
+margin: 0 30px;
+}
+.menu .row .menu-card .menu-card-title {
+margin-top: 1rem auto 0.5rem;
+}
+.btn{
+display: inline-block;
+margin-top: 1.5rem;
+padding: .4rem 2rem;
+border-radius: 5rem;
+background:red;
+font-size: 1.7rem;
+color: #fff;
+cursor: pointer;
+box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
+transition: all .3s linear;
+}
+.btn-beli{
+display: inline-block;
+margin-top: 1.5rem;
+padding: .3rem 2rem;
+border-radius: 5rem;
+background:#E8A9A9;
+font-size: 1rem;
+color: #fff;
+cursor: pointer;
+box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
+transition: all .3s linear;
+}
+.row{
+display: flex;
+flex-wrap: wrap; 
+}
